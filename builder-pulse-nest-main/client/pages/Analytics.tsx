@@ -13,7 +13,7 @@ import {
   CheckCircle2,
   Target,
   Calendar,
-  Activity,
+  Timer,
   Award,
   PieChart,
   BarChart2,
@@ -149,7 +149,7 @@ export function Analytics() {
                   <CardTitle className="text-sm font-medium">
                     In Progress
                   </CardTitle>
-                  <Activity className="h-4 w-4 text-muted-foreground" />
+                  <Clock className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-blue-600">
