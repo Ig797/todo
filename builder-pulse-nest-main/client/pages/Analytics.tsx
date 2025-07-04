@@ -7,14 +7,16 @@ import {
   isToday,
 } from "date-fns";
 import {
-  BarChart3,
+  ListTodo,
   TrendingUp,
   Clock,
-  CheckCircle,
+  CheckCircle2,
   Target,
   Calendar,
   Activity,
   Award,
+  PieChart,
+  BarChart2,
 } from "lucide-react";
 import { Task, Category } from "@shared/types";
 import { Header } from "@/components/Header";
@@ -117,7 +119,7 @@ export function Analytics() {
                   <CardTitle className="text-sm font-medium">
                     Total Tasks
                   </CardTitle>
-                  <BarChart3 className="h-4 w-4 text-muted-foreground" />
+                  <ListTodo className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">{totalTasks}</div>
@@ -164,7 +166,7 @@ export function Analytics() {
                   <CardTitle className="text-sm font-medium">
                     Completed
                   </CardTitle>
-                  <CheckCircle className="h-4 w-4 text-muted-foreground" />
+                  <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-green-600">
@@ -182,7 +184,7 @@ export function Analytics() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <TrendingUp className="h-5 w-5" />
+                    <PieChart className="h-5 w-5" />
                     <span>Priority Distribution</span>
                   </CardTitle>
                 </CardHeader>
@@ -282,7 +284,7 @@ export function Analytics() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Award className="h-5 w-5" />
+                    <BarChart2 className="h-5 w-5" />
                     <span>Category Performance</span>
                   </CardTitle>
                 </CardHeader>
