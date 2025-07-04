@@ -4,11 +4,12 @@ import {
   Plus,
   Filter,
   Search,
-  TrendingUp,
+  ListTodo,
   Clock,
-  CheckCircle,
+  CheckCircle2,
   BookCheck,
   BarChart3,
+  Timer,
 } from "lucide-react";
 import { Task, Category, TaskFilters } from "@shared/types";
 import { Header } from "@/components/Header";
@@ -173,7 +174,7 @@ export function Dashboard() {
                   <CardTitle className="text-sm font-medium">
                     Total Tasks
                   </CardTitle>
-                  <TrendingUp className="h-4 w-4 text-muted-foreground" />
+                  <ListTodo className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">{stats.total}</div>
@@ -184,7 +185,7 @@ export function Dashboard() {
                   <CardTitle className="text-sm font-medium">
                     Completed
                   </CardTitle>
-                  <BookCheck className="h-4 w-4 text-green-600" />
+                  <CheckCircle2 className="h-4 w-4 text-green-600" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-green-600">
@@ -208,7 +209,7 @@ export function Dashboard() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">Pending</CardTitle>
-                  <Clock className="h-4 w-4 text-yellow-600" />
+                  <Timer className="h-4 w-4 text-yellow-600" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-yellow-600">
