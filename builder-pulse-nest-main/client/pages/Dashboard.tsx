@@ -8,7 +8,7 @@ import {
   Clock,
   CheckCircle,
   BookCheck,
-  LayoutDashboard,
+  BarChart3,
 } from "lucide-react";
 import { Task, Category, TaskFilters } from "@shared/types";
 import { Header } from "@/components/Header";
