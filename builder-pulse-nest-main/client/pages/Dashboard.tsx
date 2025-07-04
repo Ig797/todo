@@ -155,7 +155,7 @@ export function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <div className="flex items-center gap-3">
-                  <LayoutDashboard className="h-8 w-8 text-primary" />
+                  <BarChart3 className="h-8 w-8 text-primary" />
                   <h1 className="text-3xl font-bold tracking-tight">
                     Dashboard
                   </h1>
