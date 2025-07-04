@@ -99,10 +99,28 @@ export function Header() {
             className="flex items-center space-x-2 cursor-pointer"
             onClick={() => navigate("/")}
           >
-            <div className="h-8 w-8 rounded-lg brand-gradient flex items-center justify-center">
+            <div
+              className="h-8 w-8 rounded-lg flex items-center justify-center"
+              style={{
+                backgroundImage:
+                  "url(https://cdn.builder.io/api/v1/image/assets%2F7a129c2f6da644ac89107f6e75d5a0c9%2F468c2d3e195342659b292234e4dfbd11?format=webp)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            >
               <span className="text-white font-bold text-sm">T</span>
             </div>
-            <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <h1
+              className="text-xl font-bold bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "url(https://cdn.builder.io/api/v1/image/assets%2F7a129c2f6da644ac89107f6e75d5a0c9%2F468c2d3e195342659b292234e4dfbd11)",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            >
               Todo
             </h1>
           </div>
@@ -112,7 +130,14 @@ export function Header() {
           <Button
             onClick={() => navigate("/task")}
             size="sm"
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            className="text-white"
+            style={{
+              backgroundImage:
+                "url(https://cdn.builder.io/api/v1/image/assets%2F7a129c2f6da644ac89107f6e75d5a0c9%2Fd30fe36873414ce3b3d2a7c645acc393?format=webp)",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
           >
             <Plus className="h-4 w-4 mr-2" />
             New Task
