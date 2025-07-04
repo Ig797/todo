@@ -8,6 +8,7 @@ import {
   Clock,
   CheckCircle,
   BookCheck,
+  LayoutDashboard,
 } from "lucide-react";
 import { Task, Category, TaskFilters } from "@shared/types";
 import { Header } from "@/components/Header";
@@ -153,18 +154,16 @@ export function Dashboard() {
             {/* Header Section */}
             <div className="flex items-center justify-between">
               <div>
-                <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
+                <div className="flex items-center gap-3">
+                  <LayoutDashboard className="h-8 w-8 text-primary" />
+                  <h1 className="text-3xl font-bold tracking-tight">
+                    Dashboard
+                  </h1>
+                </div>
                 <p className="text-muted-foreground">
                   Welcome back! Here's what you need to focus on today.
                 </p>
               </div>
-              <Button
-                onClick={() => navigate("/task")}
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-              >
-                <Plus className="h-4 w-4 mr-2" />
-                Create Task
-              </Button>
             </div>
 
             {/* Stats Cards */}
